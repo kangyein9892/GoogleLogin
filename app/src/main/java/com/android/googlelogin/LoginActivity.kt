@@ -28,9 +28,9 @@ class LoginActivity : AppCompatActivity() {
 
         var googleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        val xml_btn_main_googleLogin = findViewById<SignInButton>(R.id.google_sign_in_button)
+        val google_sign_in_button = findViewById<SignInButton>(R.id.google_sign_in_button)
 
-        xml_btn_main_googleLogin.setOnClickListener {
+        google_sign_in_button.setOnClickListener {
             var signInIntent = googleSignInClient?.signInIntent
             startActivityForResult(signInIntent, RC_SIGN_IN)
         }
