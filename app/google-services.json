@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "616497838357",
+    "project_id": "login-8afaa",
+    "storage_bucket": "login-8afaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616497838357:android:67aa0e9c6d03a651ced11c",
+        "android_client_info": {
+          "package_name": "com.android.googlelogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616497838357-tjco7ov8os1mavf9lrdrqgodg832k076.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3hSQIdXoIKQytm0o8TxIZ0bCdZ0wixCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616497838357-tjco7ov8os1mavf9lrdrqgodg832k076.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
