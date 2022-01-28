@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
     var auth: FirebaseAuth ?= null
     private lateinit var googleSignInClient: GoogleSignInClient
 
+    lateinit var mealButton: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -36,6 +38,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(logoutIntent)
         }
 
+        mealButton = findViewById(R.id.mealButton)
 
+        mealButton.setOnClickListener {
+            val intent = Intent(this, MealCheckActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
