@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
 
     var auth: FirebaseAuth ?= null
     private lateinit var googleSignInClient: GoogleSignInClient
-
     lateinit var mealButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,9 +20,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
-            .requestEmail()
-            .build()
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build()
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
         auth = FirebaseAuth.getInstance()
@@ -41,8 +40,9 @@ class MainActivity : AppCompatActivity() {
         mealButton = findViewById(R.id.mealButton)
 
         mealButton.setOnClickListener {
-            val intent = Intent(this, MealCheckActivity::class.java)
+            val intent = Intent(this, MealWriteActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
